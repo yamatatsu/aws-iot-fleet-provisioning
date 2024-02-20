@@ -1,0 +1,15 @@
+{
+	"name": "@aws-iot-fleet-provisioning-without-device-certificates/cdk",
+	"version": "0.1.0",
+	"scripts": {},
+	"devDependencies": {
+		"@types/node": "20.11.16",
+		"aws-cdk": "2.128.0",
+		"ts-node": "^10.9.2",
+		"typescript": "~5.3.3"
+	},
+	"dependencies": {
+		"aws-cdk-lib": "2.128.0",
+		"constructs": "^10.0.0"
+	}
+}
