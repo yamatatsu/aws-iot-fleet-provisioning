@@ -49,6 +49,7 @@ const claimPolicy = new iot.CfnPolicy(stack, "ClaimPolicy", {
 				Action: ["iot:Publish", "iot:Receive"],
 				Resource: [
 					`arn:aws:iot:${stack.region}:${stack.account}:topic/$aws/certificates/create/*`,
+					`arn:aws:iot:${stack.region}:${stack.account}:topic/$aws/certificates/create-from-csr/*`,
 					`arn:aws:iot:${stack.region}:${stack.account}:topic/$aws/provisioning-templates/${provisioningTemplate.ref}/provision/*`,
 				],
 			},
@@ -57,6 +58,7 @@ const claimPolicy = new iot.CfnPolicy(stack, "ClaimPolicy", {
 				Action: ["iot:Subscribe"],
 				Resource: [
 					`arn:aws:iot:${stack.region}:${stack.account}:topicfilter/$aws/certificates/create/*`,
+					`arn:aws:iot:${stack.region}:${stack.account}:topicfilter/$aws/certificates/create-from-csr/*`,
 					`arn:aws:iot:${stack.region}:${stack.account}:topicfilter/$aws/provisioning-templates/${provisioningTemplate.ref}/provision/*`,
 				],
 			},

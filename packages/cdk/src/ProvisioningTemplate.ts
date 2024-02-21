@@ -40,13 +40,9 @@ export class ProvisioningTemplate extends Construct {
 				// preProvisioningHook?: cdk.IResolvable | CfnProvisioningTemplate.ProvisioningHookProperty,
 				provisioningRoleArn: provisioningRole.roleArn,
 				templateName: "MyFleetProvisioningTemplate",
-				// templateType: "FLEET_PROVISIONING",
 				templateBody: JSON.stringify({
 					Parameters: {
 						SerialNumber: { Type: "String" },
-						// TODO: ドキュメントでは指定していないので、消してみる。 see https://docs.aws.amazon.com/ja_jp/iot/latest/developerguide/provision-template.html#fleet-provision-template
-						// でも多分必要なんじゃないかな
-						// "AWS::IoT::Certificate::Id": { Type: "String" },
 					},
 					Resources: {
 						thing: {

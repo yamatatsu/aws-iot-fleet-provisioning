@@ -1,5 +1,5 @@
 {
-	"name": "@aws-iot-fleet-provisioning-without-device-certificates/cdk",
+	"name": "@aws-iot-fleet-provisioning/cdk",
 	"version": "0.1.0",
 	"scripts": {},
 	"devDependencies": {

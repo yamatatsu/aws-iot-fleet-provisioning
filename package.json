@@ -1,5 +1,5 @@
 {
-	"name": "aws-iot-fleet-provisioning-without-device-certificates",
+	"name": "aws-iot-fleet-provisioning",
 	"version": "1.0.0",
 	"description": "",
 	"scripts": {},
